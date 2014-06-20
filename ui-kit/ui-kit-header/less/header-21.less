@@ -7,9 +7,10 @@
     padding-bottom:0;
     z-index:100;
     width:100%;
+    background: #171a26;
     .navbar {
-        margin-top: 107px;
         font-family: @font-family-demo;
+        margin-bottom: 20px;
         &.navbar-fixed-top {
             position: fixed;
             margin-top: 0;
@@ -30,11 +31,14 @@
             background: none;
             font-size: 15px;
             font-weight: 800;
-            border: 2px solid @brand-danger;
-            color: @brand-danger;
+            border: 2px solid #fff;
+            color: #fff;
+            text-transform: uppercase;
+            border-radius: 0;
+            letter-spacing: 1px;
             &:hover, &:focus {
-                background: @brand-danger;
-                color: white;
+                background: #fff;
+                color: #171a26;
             }
             &:active, &.active {
                 border-color: @btn-danger-active-bg;
@@ -49,7 +53,8 @@
             font-weight: 800;
             img:first-child {
                 float: left;
-                margin: -10px 15px 0 0;
+                margin: 8px 0 0;
+                width: 130px;
             }
         }
         .nav {
@@ -92,11 +97,12 @@
 .header-21-sub {
     position:relative;
     z-index:50;
-    background: #fff;
     .v-center;
     h3 {
         text-align: center;
-        .font(35px, @text-color-heading);
+        .font(48px, #fff);
+        text-transform: uppercase;
+        letter-spacing: 2px;
         img {
             .center-block;
             margin-bottom: 35px;
@@ -111,7 +117,7 @@
     }
     .lead {
         text-align: center;
-        .font(25px, @silver);
+        .font(18px, #fff);
         font-family: @font-family-demo;
         font-weight:300;
     }
@@ -123,8 +129,7 @@
         padding: 0;
         border-radius: 50%;
         text-align: center;
-        .font(18px, @gray-light);
-        background: @clouds;
+        .font(18px, #fff);
         &:hover, &:focus {
             color: white;
             background: @base;
@@ -142,7 +147,4 @@
     }
     padding-top: 20px;
     padding-bottom: 135px;
-    .lead {
-        color: @gray-light;
-    }
 }
