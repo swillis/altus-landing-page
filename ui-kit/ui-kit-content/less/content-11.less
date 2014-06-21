@@ -7,18 +7,26 @@
     text-align: center;
     padding-top: 35px;
     padding-bottom: 35px;
-    background: rgba(241, 196, 15, 0.1);
-    .font(24px, @base);
-    font-family: @font-family-demo;
+    background: @brand-secondary;
+    .font(24px, #fff);
+    font-family: @font-family-base;
     font-weight: 300;
     > .container {
         position: relative;
     }
     .btn {
+        box-sizing: border-box;
         margin-left: 33px;
-        .font(14px, white);
+        .font(14px, @brand-secondary);
         font-weight: 500;
         font-family:'Montserrat', sans-serif;
+        background: #fff;
+        border: 2px solid #fff;
+
+        &:hover {
+            background: @brand-secondary;
+            color: #fff;
+        }
     }
     @media (max-width: 480px) {
         > .container > span {
