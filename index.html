@@ -84,9 +84,6 @@
                 </div>
             </section>
 
-
-
-
             <!-- <section class="content-15 bg-grey hideme">
                 <div class="container">
                     <div class="row">
@@ -110,46 +107,23 @@
                 </div>
             </section> -->
 
-
-
-
             <section class="content-31">
-                <!-- <div class="container"> -->
 
-                    <div class="row">
-                        <div class="container">
+                <div class="strategy">
+                    <div class="container">
+                        <div class="row">
                             <div class="number">1</div>
                             <div class="col-sm-8 col-sm-offset-2">
-                                <div id="pt-1" class="page-transitions pt-perspective pt-item-1 pt-first">
-                                    <div class="pt-page pt-page-current">
-                                        <h3>Stage 1: Strategy</h3>
-                                        <p>First, we’ll have a strategy session and establish performance benchmarks, set objectives and outline a long term optimisation strategy.</p>
-                                        <div class="box">
-                                            <div class="img">
-                                                <img src="common-files/img/screenshots/objectives-screenshot@2x.jpg" width="540" height="179" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pt-page">
-                                        <h3>Stage 1: Strategy</h3>
-                                        <p>First, we’ll have a strategy session and establish performance benchmarks, set objectives and outline a long term optimisation strategy.</p>
-                                        <div class="box">
-                                            <div class="img">
-                                            <img src="common-files/img/screenshots/gantt-screenshot@2x.jpg" width="540" height="179" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="pt-controls">
-                                        <a class="pt-control-prev" href="#"></a>
-                                        <a class="pt-control-next" href="#"></a>
-                                    </div>
-                                </div>
+                                <h3>Stage 1: Strategy</h3>
+                                <p>First, we’ll have a strategy session and establish performance benchmarks, set objectives and outline a long term optimisation strategy.</p>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="row">
-                        <div class="container">
+                <div class="integration">
+                    <div class="container">
+                        <div class="row">
                             <div class="number">2</div>
                             <div class="col-sm-8 col-sm-offset-2">
                                 <h3>Stage 2: Data Integration - Zero Effort Implementation</h3>
@@ -162,9 +136,11 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="row">
-                        <div class="container">
+                <div class="control">
+                    <div class="container">
+                        <div class="row">
                             <div class="number">3</div>
                                 <div class="col-sm-8 col-sm-offset-2">
                                 <div id="pt-1" class="page-transitions pt-perspective pt-item-1 pt-first">
@@ -203,9 +179,11 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="row">
-                        <div class="container">
+                <div class="empirical-ppc">
+                    <div class="container">
+                        <div class="row">
                             <div class="number">4</div>
                                 <div class="col-sm-8 col-sm-offset-2">
                                 <div id="pt-1" class="page-transitions pt-perspective pt-item-1 pt-first">
@@ -247,9 +225,11 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="row">
-                        <div class="container">
+                <div class="pulse">
+                    <div class="container">
+                        <div class="row">
                             <div class="number">5</div>
                                 <div class="col-sm-8 col-sm-offset-2">
                                 <div id="pt-1" class="page-transitions pt-perspective pt-item-1 pt-first">
@@ -291,7 +271,8 @@
                             </div>
                         </div>
                     </div>
-                <!-- </div> -->
+
+                </div>
             </section>
 
             <section class="contacts-1 bg-grey">
@@ -365,6 +346,14 @@
         <script src="flat-ui/js/bootstrap.min.js"></script>
         <script src="common-files/js/modernizr.custom.js"></script>
         <script src="common-files/js/page-transitions.js"></script>
+        <script src="common-files/js/jquery.parallax.min.js"></script>
         <script src="common-files/js/startup-kit.js"></script>
+        <script type="text/javascript">
+        (function() {
+            $('.strategy').each(function() {
+                $(this).parallax('100%', -0.08, true);
+            })
+        }(jQuery));
+        </script>
     </body>
 </html>
