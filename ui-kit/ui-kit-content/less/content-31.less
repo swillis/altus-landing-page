@@ -27,13 +27,14 @@
         }
         > * {
             padding: 100px 0;
-            .opacity(20);
-            .transition(.6s opacity);
+            // .opacity(20);
+            // .transition(.6s opacity);
         }
         h3 {
             margin: 0 0 30px;
             // font-size: 40px;
             color: #7f8c8d;
+            color: @brand-secondary;
             .transition(.6s color);
         }
         .number {
@@ -249,6 +250,26 @@
             }
             span {
                 cursor: pointer;
+                display: block;
+                width: 33.33%;
+                float: left;
+                text-align: center;
+                line-height: 100px;
+                background: @clouds;
+                color: #fff;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 18px;
+                color: @brand-secondary;
+
+                &:nth-child(odd) {
+                    background: darken(@clouds, 2%)
+                }
+
+                &:hover {
+                    background: @brand-secondary;
+                    color: #fff;
+                }
             }
         }
     }
