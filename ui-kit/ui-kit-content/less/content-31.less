@@ -13,7 +13,7 @@
     .pulse > .container {
         padding-bottom: 50px;
     }
-    .container {
+    .container.outer {
         position: relative;
         // padding: 50px 0;
         &:before {
@@ -213,7 +213,7 @@
     }
 
     .strategy {
-        background: #e1e1e3 url("../common-files/img/strategy-bg.jpg") no-repeat;
+        background: #e1e1e3 url("../common-files/img/strategy-bg.jpg") no-repeat 50% 200px;
         background-size: cover;
 
         .row {
@@ -243,13 +243,13 @@
         }
 
         .box {
-            width: 50%;
+            width: 33.33%;
             float: left;
 
-            &.blah {
-                background: red;
-                height: 222px;
-            }
+            // &.adwords {
+            //     background: url('../common-files/img/stage-4/adwords-logo.jpg') no-repeat;
+            //     height: 315px;
+            // }
         }
     }
 
@@ -259,8 +259,8 @@
             overflow: hidden;
             border-radius: 3px;
             position: relative;
-            border: 2px solid @brand-secondary;
-            background: @brand-secondary;
+            // border: 2px solid @brand-secondary;
+            // background: @brand-secondary;
 
             .action-gallery {
                 width: 100%;
@@ -296,7 +296,7 @@
                 letter-spacing: 1px;
                 font-size: 18px;
                 color: @brand-secondary;
-                border-top: 2px solid @brand-secondary;
+                // border-top: 2px solid @brand-secondary;
 
                 &:nth-child(odd) {
                     background: darken(@clouds, 2%)
