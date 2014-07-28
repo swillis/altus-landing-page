@@ -230,22 +230,56 @@
         }
     }
 
+    .control {
+        .row {
+            padding: 100px 0 0;
+        }
+    }
+
+    .empirical-ppc {
+        ul {
+            padding: 0;
+        }
+
+        .box {
+            width: 50%;
+            float: left;
+
+            &.blah {
+                background: red;
+                height: 222px;
+            }
+        }
+    }
+
     .pulse {
         .in-action {
+            .clearfix();
+            overflow: hidden;
+            border-radius: 3px;
+            position: relative;
+            border: 2px solid @brand-secondary;
+            background: @brand-secondary;
+
             .action-gallery {
                 width: 100%;
-                height: 400px;
+                height: 0;
+                padding-top: 66.64%;
+                .transition(0.3s all);
 
                 &.iphone {
-                    background: red;
+                    background: url('../common-files/img/stage-5-imac.jpg') no-repeat;
+                    background-size: contain;
                 }
 
                 &.ipad {
-                    background: green;
+                    background: url('../common-files/img/stage-5-iphone.jpg') no-repeat;
+                    background-size: contain;
                 }
 
                 &.bds {
-                    background: blue;
+                    background: url('../common-files/img/stage-5-screens.jpg') no-repeat;
+                    background-size: contain;
                 }
             }
             span {
@@ -261,6 +295,7 @@
                 letter-spacing: 1px;
                 font-size: 18px;
                 color: @brand-secondary;
+                border-top: 2px solid @brand-secondary;
 
                 &:nth-child(odd) {
                     background: darken(@clouds, 2%)
